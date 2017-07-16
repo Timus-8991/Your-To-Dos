@@ -1,0 +1,102 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.sumit.todo3.MainActivity" >
+
+
+   <item
+           android:id="@+id/SearchView"
+           android:title="Search"
+           android:icon="@android:drawable/ic_menu_search"
+           app:showAsAction="always|collapseActionView"
+           app:actionViewClass="android.support.v7.widget.SearchView"/>
+
+
+
+    <item
+        android:id="@+id/Categories"
+        android:checkable="false"
+        android:checked="true"
+        android:enabled="true"
+        android:menuCategory="container"
+        android:title="Categories"
+        android:titleCondensed="Categories"
+        android:visible="true"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/birthdaytodos"
+                android:title="Birthday To Dos"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/meetingtodos"
+                android:title="Meeting To Dos"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/shoppingtodos"
+                android:title="Shopping To Dos"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/studytodos"
+                android:title="Study To Dos"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/gymtodos"
+                android:title="Gym To Dos"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/otherstodos"
+                android:title="Other To Dos"
+                app:showAsAction="never" />
+
+            <item android:id="@+id/alltodos"
+                android:title="ALL TO DOs"
+                app:showAsAction="never"></item>
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/SortBy"
+        android:checkable="false"
+        android:checked="true"
+        android:enabled="true"
+
+        android:menuCategory="container"
+        android:title="Sort By"
+        android:titleCondensed="Categories"
+        android:visible="true"
+        app:showAsAction="never">
+
+        <menu>
+
+
+            <item android:id="@+id/sortbytitle"
+                android:title="Title"
+                app:showAsAction="never"
+                ></item>
+               <item android:id="@+id/CategoriesSortBy"
+                   android:title="Category"
+                   app:showAsAction="never"></item>
+
+               <item android:id="@+id/sortbydate"
+                   android:title="Date"
+                   app:showAsAction="never"></item>
+
+
+        </menu>
+    </item>
+
+
+    <item android:id="@+id/delete_all_to_dos"
+          android:title="Delete All To Dos"
+          android:visible="true"
+          app:showAsAction="never">
+    </item>
+</menu>

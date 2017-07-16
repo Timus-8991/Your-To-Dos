@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.sumit.todo3">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/your_to_do_launcher_icon"
+        android:label="@string/your_to_do"
+        android:roundIcon="@mipmap/your_to_do_launcher_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/your_to_do"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ChooseCategoryActivity" />
+        <activity android:name=".ToDoAppEditPageActivity" />
+        <activity
+            android:name=".Main2Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:noHistory="true" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".AlarmsReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+    </application>
+
+</manifest>
